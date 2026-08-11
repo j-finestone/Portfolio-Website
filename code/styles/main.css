@@ -4,12 +4,51 @@
     justify-content: space-between;
 
 }
+body {
+
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 17px;
+    padding-inline:3%;
+    padding-top: 1%;
+    padding-bottom: 4%;
+
+
+
+}
+
 
 .links {
 
     display:flex;
     flex-direction: row;
-    gap: 10px;
+    gap: 2%;
+
+
+}
+.box-list {
+
+    display:flex;
+    align-items:left;
+    justify-content:flex-start;
+    list-style: none;
+    padding:10px;
+    
+    
+
+}
+
+.box-list li {
+    background-color:lightblue;
+    margin-right: 20px;
+
+
+    border-radius: 5px;
+    border-color:black;
+    border-width: 2px;
+    border-style: solid;
+    padding-inline: 15px;
+    padding-block: 8px;
+
 
 
 }
