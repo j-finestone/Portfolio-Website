@@ -3,7 +3,18 @@
     align-items: center;
     justify-content: space-between;
 
+
 }
+.links {
+    color: #5b5c52;
+    
+}
+.soft-text {
+    color: #5b5c52;
+
+}
+
+
 body {
 
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -11,6 +22,10 @@ body {
     padding-inline:3%;
     padding-top: 1%;
     padding-bottom: 4%;
+    background-color:#efede4;
+    color: #5b5c52;
+    border-color: #d9d4c4;
+    padding-inline: 15%;
 
 
 
@@ -18,37 +33,82 @@ body {
 
 
 .links {
-
     display:flex;
     flex-direction: row;
-    gap: 2%;
-
+    gap: 6%;
 
 }
+
+.text-description {
+
+    width: 60%
+
+}
+
+/*Box list */
 .box-list {
 
     display:flex;
     align-items:left;
     justify-content:flex-start;
     list-style: none;
-    padding:10px;
-    
-    
+    padding:1%;
+    padding-top: 1px;
 
 }
 
 .box-list li {
-    background-color:lightblue;
-    margin-right: 20px;
-
+    background-color:#f8f6ef;
+    margin-right: 1.5%;
 
     border-radius: 5px;
-    border-color:black;
-    border-width: 2px;
+    border-width: .1vw;
     border-style: solid;
     padding-inline: 15px;
     padding-block: 8px;
+    border-color: #d9d4c4;
+}
 
 
+/*Project cards */
+.projects{
+    display:flexbox;
+    justify-content: left;
+    padding: 2%;
+    padding-bottom: 5%;
+}
+
+.card-thumbnail {
+
+    border-radius: 2%;
+    background-color: #d9d4c4;
+    
+}
+.card {
+
+    width: 30%;
+    margin:0px;
+    padding:0;
+    border-style:solid;
+    border-width: .15vw;
+    border-radius: 2%;
+    background-color: #f8f6ef;
+    transition: .2s;
+    border-color: #d9d4c4;
+}
+.card:hover{
+
+    transform: translateY(-5%);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, .2);
+    border-width: .25vw
+
+
+
+}
+
+
+.card-description {
+    text-align: left;
+    padding: 4%;
 
 }
