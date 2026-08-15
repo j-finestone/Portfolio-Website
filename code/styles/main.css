@@ -1,3 +1,17 @@
+
+:root {
+    --paper: #efede4;   /* page background */
+    --card: #f8f6ef;    /* card/surface background */
+    --ink: #23241f;     /* primary text */
+    --ink-soft: #5b5c52; /* secondary text, labels, nav links */
+    --line: #d9d4c4;    /* borders, dividers */
+
+    --teal: #1d6b63;    /* primary accent — the only "interactive" color */
+    --rust: #a8471f;    /* category accent 1 */
+    --mustard: #a5791a; /* category accent 2 */
+}
+
+
 .header {
     display: flex;
     align-items: center;
@@ -6,11 +20,11 @@
 
 }
 .links {
-    color: #5b5c52;
+    color: var(--ink-soft);
     
 }
 .soft-text {
-    color: #5b5c52;
+    color: var(--ink-soft);
 
 }
 
@@ -19,13 +33,13 @@ body {
 
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 17px;
-    padding-inline:3%;
+    padding-inline: 10%;
     padding-top: 1%;
     padding-bottom: 4%;
-    background-color:#efede4;
-    color: #5b5c52;
-    border-color: #d9d4c4;
-    padding-inline: 15%;
+    background-color:var(--paper);
+    color: var(--ink);
+    border-color: var(--line);
+    
 
 
 
@@ -58,43 +72,67 @@ body {
 }
 
 .box-list li {
-    background-color:#f8f6ef;
+    background-color:var(--card);
     margin-right: 1.5%;
 
-    border-radius: 5px;
+    border-radius: 1px;
     border-width: .1vw;
     border-style: solid;
     padding-inline: 15px;
     padding-block: 8px;
-    border-color: #d9d4c4;
+    border-color: var(--line);
 }
 
 
 /*Project cards */
 .projects{
-    display:flexbox;
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 4%;
     justify-content: left;
-    padding: 2%;
-    padding-bottom: 5%;
+    align-items: stretch;
+    
+    padding-top: 2%;
+    padding-bottom: 6%;
 }
 
 .card-thumbnail {
-
-    border-radius: 2%;
-    background-color: #d9d4c4;
-    
+    filter: saturate(.85) contrast(.88);
+    width:100%;
+    background-color: var(--card);
+    object-fit:contain;
 }
+
+.card-thumbnail-wrap {
+    padding: 12px;
+    padding-bottom:0px;
+    background-color: var(--card);
+
+    border-top: 4px solid var(--teal);
+    border-bottom: 1px solid var(--line);
+
+}
+
 .card {
 
-    width: 30%;
-    margin:0px;
+    width: 80%;
+
+    display: flex;
+    flex-direction:column;
+
+    gap:4%;
     padding:0;
+
     border-style:solid;
     border-width: .15vw;
-    border-radius: 2%;
-    background-color: #f8f6ef;
+    border-radius: 5px;
+
+    background-color: var(--card);
+    border-color: var(--line);
+
     transition: .2s;
-    border-color: #d9d4c4;
+    
+    
 }
 .card:hover{
 
@@ -110,5 +148,13 @@ body {
 .card-description {
     text-align: left;
     padding: 4%;
+
+}
+
+/*footer*/
+footer {
+
+    display: flex;
+    justify-content: space-between;
 
 }
