@@ -6,6 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
     for (var i=0; i<cards.length; i++) {
         const card = document.createElement("button")
         card.className = "card";
+        card.a
 
 
         card.innerHTML = `
@@ -20,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         //Add event listener to card
         card.addEventListener("click", () => {
-        //window.location.href = `project.html?id=${p.id}`;
+        window.location.href = `projectPage.html+id=`+``;
     });
 
   //Add it to the grid 
