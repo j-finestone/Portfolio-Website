@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         //Add event listener to card
         card.addEventListener("click", () => {
-        window.location.href = `projectPage.html+id=`+``;
+        window.location.href = `projectPage.html`;
     });
 
   //Add it to the grid 
