@@ -13,15 +13,17 @@ document.addEventListener("DOMContentLoaded", () => {
         <!--place older cards--> 
         <section class="card-thumbnail-wrap">
             <img class="card-thumbnail" src="` + cards[i].thumbnail+ ` "alt=". `+ cards[i].header + ` project thumbnail" width="100%"> 
-        </section>    
+        </section>   
         <section class="card-description">
             <h4>`+cards[i].header+`</h4>
             <p>`+cards[i].description+`</p>
         </section`;
 
+        const id = cards[i].id
         //Add event listener to card
         card.addEventListener("click", () => {
-        window.location.href = `projectPage.html`;
+            window.location.href = `projectPage.html?id=`+ id;
+
     });
 
   //Add it to the grid 

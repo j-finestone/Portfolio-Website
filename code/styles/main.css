@@ -165,3 +165,15 @@ footer {
     justify-content: space-between;
 
 }
+.exaple-images 
+{
+    display: flex;
+
+}
+.example-image {
+
+    width: 30%;
+    margin-right: 10%;
+    margin-bottom: 2%;
+
+}
