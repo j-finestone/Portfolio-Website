@@ -45,6 +45,11 @@ body {
 
 }
 
+a { 
+    color: var(--teal);
+    text-decoration: underline;
+
+}
 
 .links {
     display:flex;
@@ -54,11 +59,7 @@ body {
 
 }
 
-a { 
-    color: var(--teal);
-    text-decoration: underline;
 
-}
 
 .text-description {
 

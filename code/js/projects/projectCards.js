@@ -37,7 +37,7 @@ cards.push(ankiCard)
 const myLittleCultsCard = new ProjectCards (
     "code/images/my-little-cults/my-little-cults-thumbnail.png", 
     "My Little Cults", 
-    "Fun game that I dont feel like wrighting a description for right now",
+    "Fun game that I dont feel like writing a description for right now",
     "my-little-cults")
 
 cards.push(myLittleCultsCard)

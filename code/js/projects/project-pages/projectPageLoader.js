@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (project) {
         //add title and discription element to page
         document.getElementById("title").innerHTML = project.title;
-        document.getElementById("description").textContent = project.description;
+        document.getElementById("description").innerHTML = project.description;
 
 
         //add new html elements in image section,
