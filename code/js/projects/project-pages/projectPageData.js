@@ -9,23 +9,69 @@ const descriptions = {
         <p>Balloon-Scape was developed in the GameMaker studio. It was a large-scale project, ending up with over 3,700 lines of code. The final project ended up containing a pop-in system to manage performance, and keep enemies to their assigned regions. Pausing was implemented through taking a screenshot, deactivating all the instances and using the photo as a background for the menus. Enemies featured a path finding algorithm, and states for wandering, chasing the player, getting hit, and charging up projectiles. I built all the art for this project.</p>
         <h4>Lessons</h4>
         <p>This project taught me how to code, manage large scale projects, data structures, pathfinding, UI design, art, and game development.</p>
-        <h4>Tech Stack</h4> GameMaker Language, Hosted on Itch.io 
+        <h4>Tech Stack</h4> GameMaker Language, Hosted on Itch.io `,
+    ankiCards: `
+        <p>The Anki Deck Creator project is a series of scripts that generates Mandarin Chinese flashcards</p>
+        <p>After deciding to study Mandarin Chinese, I noticed that there weren’t any Anki decks or data sets that contained everything I wanted out of vocabulary flashcards. Namely: a deck ordered based strictly on a frequency list rather than the HSK, example sentences according to Krashen’s i+1 principle, notes flagging the nuances of the harder-to-translate words, pronunciation guides, and a breakdown of the characters making up a word. Because of this, I decided to make my own deck</p>
 
-        
-    
-    
-    
-    
-    
-    `
+        <h4>What I built</h4>
+        <p>This project takes in a pregenerated frequency list, and uses the Chat GPT API to generate translations, example sentences for each word. Additionally, it adds pinyin (pronunciation guides) to the card using pypinyin, and a breakdown of the components of the Chinese characters using the Make Me a Hanzi Dataset. Cards were generated asynchronously in batches to speed up generation</p>
 
+        <h4>Lessons</h4>
 
+        <p>This project taught me about working with and creating large data sets, batch processing, file/data types and communicating with APIs.</p>
 
+        <h4>tech stack</h4>
+        <p>hyperTTS, Genanki, pandas, pypinyin, Python</p>
+
+        <h4>Example data set</h4>
+            <table>
+            <thead>
+                <tr>
+                <th>Rank</th><th>Word</th><th>Pronunciation</th><th>Meaning</th><th>Sentence</th><th>Sentence Meaning</th><th>Notes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                <td>5</td><td>了</td><td>le</td><td>completed-action marker; change-of-state marker</td>
+                <td>猫吃了苹果。</td><td>The cat ate the apple.</td>
+                <td>After a verb, 了 marks a completed action. At the end of a sentence, it can mark a new situation: 他来了 "he has arrived."</td>
+                </tr>
+                <tr>
+                <td>6</td><td>不</td><td>bù</td><td>not</td>
+                <td>猫不吃苹果。</td><td>Cats do not eat apples.</td>
+                <td>不 usually negates present, habitual, or future actions. 没 is generally used for past actions or for not having something.</td>
+                </tr>
+                <tr>
+                <td>2</td><td>我</td><td>wǒ</td><td>I; me</td>
+                <td>我是中国人。</td><td>I am Chinese.</td><td>—</td>
+                </tr>
+            </tbody>
+            </table>`,
+    myLittleCults: `
+        <p>My Little Cults is a fast paced, action game developed for the two-week, Gamedev.js Jam 2025 game jam based on the theme “balance”. The game features two parallel worlds, each with a group of cult members. The goal is to keep the cult member populations the same, while hazards like poisonous flowers, changelings, and a kraken constantly offset that balance. The project ranked twenty-six out of 408</p>
+
+        <h4>What I built</h4>
+        <p>My Little Cults was developed in unity. I worked as a programmer in a group of four. The main challenges were getting the cult member npc, and environment behaviors to be natural and dynamic, while also interacting with one another. We used a state machine to determine the cult member behaviors, and had hazards spawn on a timer.</p>
+
+        <h4>Lessons</h4>
+        <p>This project gave me experience in C#, and working with groups on a shared project using githubl. It also served as a heavy exercise in working under strict time constraints.</p>
+
+        <h4>Tech Stack</h4>
+        <p>Unity (C#), Spine (2D skeletal animation), NavMesh Plus (2D pathfinding), URP, Post Processing Stack
+    `,
+    monsterMash: `
+        <p>Monster Mash is a custom made class points Website.</p>
+
+        <p>My mother, who was a teacher, needed a way to keep track of her students’ points. She requested a monster theme, simple UI, with gamification and sensory feedback features to encourage students to gain points.</p>
+
+        <h4>What I built</h4>
+        <p>Monster Mash features the ability to make profiles with a monster image for each student, a button for choosing a random student, and the ability to give points to students individually or in bulk, and sensory feedback like sound effects, confetti, and card animations. It used Firebase to store data on the cloud.</p>
+
+        <h4>Lessons</h4>
+        <p>Developing Monster Mash gave me experience in web development, working with cloud storage, libraries, and hosting API’s.</p>`
+    
 }
-
-
-
-
 
 
 
@@ -37,35 +83,70 @@ const projectData = {
         id: "balloon-scape",
         title: "Balloon-scape",
         description: descriptions.balloonScape,
-        images: ["code/images/balloon-scape/balloon-scape-thumbnail.png", 
-            "code/images/balloon-scape/balloon-scape-thumbnail.png",
-            "code/images/balloon-scape/balloon-scape-thumbnail.png",
-            "code/images/balloon-scape/balloon-scape-thumbnail.png"
-        ]
+        images: [
+            "code/images/balloon-scape/balloon-scape-thumbnail.png", 
+            "code/images/balloon-scape/balloon-image.png",
+            "code/images/balloon-scape/desert-lake.png",
+            "code/images/balloon-scape/winter-biome.png"
+        ],
+        accessLinks: {
+            gamePage: {
+                title: "Play Game",
+                link: "https://jordanfeinstein.itch.io/balloon-scape"
+            },
+            github: {
+                title: "GitHub",
+                link: "https://github.com/j-finestone/Balloon-Scape"
+            }
+        }
     },
 
     // Anki Cards
     ankiCards: {
         id: "anki-deck",
-        title: "Anki Cards",
-        description: "Description for Anki Cards page. unujnruigbtjr jdsijiv easIfm rfnujt ednjeti refimiwjejf jifijfwi erfjrfjifrj",
-        images: []
+        title: "Anki Deck Generator",
+        description: descriptions.ankiCards,
+        images: [],
+        accessLinks: {
+            github: {
+                title: "GitHub",
+                link: "https://github.com/j-finestone/Anki-Deck-Creator/"
+            }
+        }
     },
 
     // My Little Cults
     myLittleCults: {
         id: "my-little-cults",
         title: "My Little Cults",
-        description: "Description for My Little Cults page. unujnruigbtjr jdsijiv easIfm rfnujt ednjeti refimiwjejf jifijfwi erfjrfjifrj",
-        images: []
+        description: descriptions.myLittleCults,
+        images: [],
+        accessLinks: {
+            gamePage: {
+                title: "Play Game",
+                link: "https://kwabs-545.itch.io/my-little-cults"
+            }
+        }
+
     },
 
     // Monster Mash
     monsterMash: {
         id: "monster-mash",
         title: "Monster Mash",
-        description: "Description for Monster Mash page. unujnruigbtjr jdsijiv easIfm rfnujt ednjeti refimiwjejf jifijfwi erfjrfjifrj",
-        images: []
+        description: descriptions.monsterMash,
+        images: [],
+        
+        accessLinks: {
+            webpage: {
+                title: "Launch Website",
+                link: "https://monster-mash-class.web.app/"
+            },
+            github: {
+                title: "Github",
+                link: "https://github.com/j-finestone/MonsterMash"
+            },
+        }
     }
 };
 
