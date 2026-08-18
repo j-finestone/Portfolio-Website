@@ -31,9 +31,9 @@ table {
     border-collapse: collapse;
 }
 th, td {
-    border: 1px solid var(--ink-soft)
+    border: 1px solid var(--ink-soft);
+    
 }
-
 
 /*headers*/
 .header {
@@ -169,3 +169,20 @@ footer {
     margin-bottom: 2%;
 
 }
+
+/*tables*/
+.table-container {
+    max-width: 100%;
+    max-height: 300px;
+    overflow: auto;
+    border-style: solid;
+    border-width:5px;
+    border-color:var(--line);
+    border-radius: 3px;
+    scrollbar-width: thin;
+    scrollbar-color: var(--paper);
+}
+
+
+
+

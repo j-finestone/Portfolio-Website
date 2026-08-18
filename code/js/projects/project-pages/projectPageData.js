@@ -1,3 +1,4 @@
+import tables from "./table.js";
 //descriptions (put here for readability)
 const descriptions = {
 
@@ -25,29 +26,8 @@ const descriptions = {
         <p>hyperTTS, Genanki, pandas, pypinyin, Python</p>
 
         <h4>Example data set</h4>
-            <table>
-            <thead>
-                <tr>
-                <th>Rank</th><th>Word</th><th>Pronunciation</th><th>Meaning</th><th>Sentence</th><th>Sentence Meaning</th><th>Notes</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                <td>5</td><td>了</td><td>le</td><td>completed-action marker; change-of-state marker</td>
-                <td>猫吃了苹果。</td><td>The cat ate the apple.</td>
-                <td>After a verb, 了 marks a completed action. At the end of a sentence, it can mark a new situation: 他来了 "he has arrived."</td>
-                </tr>
-                <tr>
-                <td>6</td><td>不</td><td>bù</td><td>not</td>
-                <td>猫不吃苹果。</td><td>Cats do not eat apples.</td>
-                <td>不 usually negates present, habitual, or future actions. 没 is generally used for past actions or for not having something.</td>
-                </tr>
-                <tr>
-                <td>2</td><td>我</td><td>wǒ</td><td>I; me</td>
-                <td>我是中国人。</td><td>I am Chinese.</td><td>—</td>
-                </tr>
-            </tbody>
-            </table>`,
+        ${tables.ankiTable}
+        `,
     myLittleCults: `
         <p>My Little Cults is a fast paced, action game developed for the two-week, Gamedev.js Jam 2025 game jam based on the theme “balance”. The game features two parallel worlds, each with a group of cult members. The goal is to keep the cult member populations the same, while hazards like poisonous flowers, changelings, and a kraken constantly offset that balance. The project ranked twenty-six out of 408</p>
 
@@ -72,6 +52,8 @@ const descriptions = {
         <p>Developing Monster Mash gave me experience in web development, working with cloud storage, libraries, and hosting API’s.</p>`
     
 }
+
+
 
 
 
