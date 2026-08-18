@@ -53,7 +53,11 @@ const descriptions = {
         <p>Monster Mash features the ability to make profiles with a monster image for each student, a button for choosing a random student, and the ability to give points to students individually or in bulk, and sensory feedback like sound effects, confetti, and card animations. It used Firebase to store data on the cloud.</p>
 
         <h4>Lessons</h4>
-        <p>Developing Monster Mash gave me experience in web development, working with cloud storage, libraries, and hosting API’s.</p>`
+        <p>Developing Monster Mash gave me experience in web development, working with cloud storage, libraries, and hosting API’s.</p>
+        <h4>Tech Stach</h>
+        <p>HTML, CSS, JaveScript, </p>`
+
+    
     
 }
 
