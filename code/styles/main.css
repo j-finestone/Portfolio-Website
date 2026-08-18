@@ -158,17 +158,29 @@ footer {
     display: flex;
     justify-content: space-between;
 }
-.exaple-images 
+
+/*images*/
+#example-images 
 {
     display: flex;
+    flex-wrap: wrap;
 
 }
 .example-image {
-    width: 30%;
-    margin-right: 10%;
-    margin-bottom: 2%;
+    width: 100%;
 
 }
+.image-wrap {
+    color:var(var(--card));
+    padding: 1%;
+    margin: 2%;
+    margin-bottom:2%;
+    background-color: var(--card);
+    width: 40%;
+    border-top: 4px solid var(--teal);
+    border-bottom: 1px solid var(--line);
+}
+
 
 /*tables*/
 .table-container {
@@ -182,7 +194,5 @@ footer {
     scrollbar-width: thin;
     scrollbar-color: var(--paper);
 }
-
-
 
 

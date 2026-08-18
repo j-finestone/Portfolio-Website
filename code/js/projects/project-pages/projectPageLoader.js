@@ -34,13 +34,19 @@ document.addEventListener("DOMContentLoaded", () => {
         //add new html elements in image section,
         const imageSection = document.getElementById("example-images");
         project.images.forEach(imageSource => {
+            //Make constainer
+            const imageContainerElement = document.createElement("section");
+            imageContainerElement.setAttribute("class", "image-wrap")
+
+            //Make image
             const imageElement = document.createElement("img");
 
             imageElement.setAttribute("class", "example-image");
             imageElement.setAttribute("src", imageSource);
 
             //attactch it to images section
-            imageSection.appendChild(imageElement)
+            imageContainerElement.appendChild(imageElement)
+            imageSection.appendChild(imageContainerElement)
         })
         
     }
