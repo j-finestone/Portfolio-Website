@@ -41,6 +41,10 @@ th, td {
     align-items: center;
     justify-content: space-between;
 
+}
+#home-button {
+    color: (var(--ink));
+    text-decoration: None;
 
 }
 .links {
@@ -51,7 +55,6 @@ th, td {
     color: var(--ink-soft);
 
 }
-
 .links {
     display:flex;
     flex-direction: row;
