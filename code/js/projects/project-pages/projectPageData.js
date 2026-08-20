@@ -26,7 +26,7 @@ const descriptions = {
         <p>This project taught me about working with and creating large data sets, batch processing, file/data types and communicating with APIs.</p>
 
         <h4>Tech Stack</h4>
-        <p>hyperTTS, Genanki, pandas, pypinyin, Python</p>
+        <p>HyperTTS, Genanki, pandas, pypinyin, Python</p>
 
         <h4>Example data set</h4>
         ${tables.ankiTable}
@@ -46,12 +46,12 @@ const descriptions = {
     `,
     monsterMash: `
         <h4>Overview</h4>
-        <p>Monster Mash is a custom made class points Website.</p>
+        <p>Monster Mash is a custom made class points website.</p>
 
         <p>Any elementary school teacher friend needed a way to keep track of her students’ points. She requested a monster themed, Class-Dojo inspired website, with simple UI, gamification and sensory feedback features to encourage students to gain points.</p>
 
         <h4>What I built</h4>
-        <p>Monster Mash features Google login, profiles with a monster image for each student, a button for choosing a random student, and the ability to give or take away points from students individually or in bulk, and sensory feedback like sound effects, confetti, and card animations. It used Firebase to store data on the cloud.</p>
+        <p>Monster Mash features profiles with a monster image for each student, a button for choosing a random student, the ability to give or take away points from students individually or in bulk, sensory feedback like sound effects, confetti, and card animations, and Google login. It used Firebase to store data on the cloud.</p>
 
         <h4>Lessons</h4>
         <p>Developing Monster Mash gave me experience in web development, working with cloud storage, libraries, and hosting API’s.</p>
