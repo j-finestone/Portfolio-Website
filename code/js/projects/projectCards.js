@@ -19,16 +19,16 @@ var cards= []
 const balloonScapeCard = new ProjectCards (
     "code/images/balloon-scape/balloon-scape-thumbnail.png", 
     "Balloon-Scape", 
-    "Explore a vast, 2D open world, packed with all sorts of unique locations, enemies, and items to collect. Play as an adventurous wizard, scouring across the land, desperately in search of the 4 keys to a getaway-hot air balloon that will let him escape the planet before its fated destruction.",
+    "Explore a vast, 2D open world, packed with unique locations, enemies, and items to collect. Play as an adventurous wizard, scouring across the land, desperately in search of the 4 keys to a getaway-hot air balloon that will let him escape the planet before its fated destruction",
     "balloon-scape")
 
 cards.push(balloonScapeCard)
 
 //Anki card
 const ankiCard = new ProjectCards (
-    "code/images/anki/anki-thumbnail.png", 
+    "code/images/anki/anki-thumbnail.svg", 
     "Mandarin Anki Deck", 
-    "Anki flashcards with AI generated translations, i+1 example sentence, and notes",
+    "Anki flashcards for Mandarin Chinese with AI generated translations, notes, and example sentences modeled off of Stephen Krashen's i+1 principle",
     "anki-deck")
 
 cards.push(ankiCard)
@@ -37,7 +37,7 @@ cards.push(ankiCard)
 const myLittleCultsCard = new ProjectCards (
     "code/images/my-little-cults/mlc-thumbnail.png", 
     "My Little Cults", 
-    "Fun game that I dont feel like writing a description for right now",
+    "A game developed for a game jam in which you must balance the populations of two parallel cults",
     "my-little-cults")
 
 cards.push(myLittleCultsCard)
@@ -47,7 +47,7 @@ cards.push(myLittleCultsCard)
 const monsterMash = new ProjectCards (
     "code/images/monster-mash/monster-mash-thumbnail.png", 
     "Monster Mash", 
-    "Classrom maneging website for keeping track of student points, with pavlovian feadbck to encurage students ",
+     "Classrom management website for keeping track of student points, with sensory feedback to encourage good behavior",
     "monster-mash")
 
 

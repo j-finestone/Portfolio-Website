@@ -1,0 +1,55 @@
+<svg viewBox="0 0 400 225" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .bg { fill: #f8f6ef; }
+      .frame { stroke: #d9d4c4; stroke-width: 1.5; fill: none; }
+      .divider { stroke: #d9d4c4; stroke-width: 1; }
+      .tag { font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.08em; fill: #a8471f; }
+      .label { font-family: 'IBM Plex Mono', monospace; font-size: 10px; letter-spacing: 0.08em; fill: #5b5c52; }
+
+      .headword { font-family: Georgia, 'Fraunces', serif; font-size: 38px; fill: #23241f; }
+      .headword-pinyin { font-family: Georgia, 'Fraunces', serif; font-style: italic; font-size: 16px; fill: #23241f; }
+      .headword-gloss { font-family: 'IBM Plex Mono', monospace; font-size: 11px; fill: #5b5c52; }
+
+      .hanzi { font-family: Georgia, 'Fraunces', serif; font-size: 24px; fill: #23241f; }
+      .hanzi-highlight { font-family: Georgia, 'Fraunces', serif; font-size: 24px; fill: #1d6b63; font-weight: 600; }
+      .highlight-box { fill: #1d6b63; opacity: 0.14; }
+
+      .pinyin { font-family: Georgia, 'Fraunces', serif; font-style: italic; font-size: 12px; fill: #5b5c52; }
+      .gloss { font-family: 'IBM Plex Mono', monospace; font-size: 10px; fill: #5b5c52; }
+      .mark { font-family: Georgia, 'Fraunces', serif; font-size: 17px; fill: #1d6b63; opacity: 0.3; }
+    </style>
+  </defs>
+
+  <!-- card background / frame -->
+  <rect class="bg" x="0" y="0" width="400" height="225"/>
+  <rect class="frame" x="16" y="14" width="368" height="197" rx="6"/>
+
+  <!-- top tag -->
+  <text class="tag" x="34" y="40">I+1 · MANDARIN</text>
+
+  <!-- ===== headword block ===== -->
+  <text class="headword" x="112" y="90" text-anchor="middle">要</text>
+  <text class="headword-pinyin" x="112" y="109" text-anchor="middle">yào</text>
+
+  <text class="headword-gloss" x="196" y="72" text-anchor="start">to want; need;</text>
+  <text class="headword-gloss" x="196" y="87" text-anchor="start">be going to</text>
+
+  <!-- divider -->
+  <line class="divider" x1="34" y1="122" x2="366" y2="122"/>
+  <text class="label" x="34" y="140">EXAMPLE</text>
+
+  <!-- ===== example sentence — hand-positioned per glyph, uniform 28px advance ===== -->
+  <!-- 我 要 水 。  (4 glyphs, target = 要, index 1) -->
+  <rect class="highlight-box" x="180" y="137" width="28" height="34" rx="3"/>
+
+  <text class="hanzi" x="152" y="160">我</text>
+  <text class="hanzi-highlight" x="182" y="162">要</text>
+  <text class="hanzi" x="208" y="162">水。</text>
+
+  <text class="pinyin" x="200" y="188" text-anchor="middle">Wǒ yào shuǐ.</text>
+  <text class="gloss" x="200" y="198" text-anchor="middle">I want water.</text>
+
+  <!-- corner mark -->
+  <text class="mark" x="340" y="198">字</text>
+</svg>

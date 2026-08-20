@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
             <img class="card-thumbnail" src="` + cards[i].thumbnail+ ` "alt=". `+ cards[i].header + ` project thumbnail" width="100%"> 
         </section>   
         <section class="card-description">
-            <h4>`+cards[i].header+`</h4>
+            <h1>`+cards[i].header+`</h1>
             <p>`+cards[i].description+`</p>
         </section`;
 
