@@ -37,6 +37,11 @@ th, td {
 }
 p {
     font-weight: 300;
+    margin-top: .5%;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: .6%;
+    margin-top: 1.5%;
 }
 button {
   font-family: inherit;
@@ -49,7 +54,6 @@ button {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 2px;
 
 }
 #home-button {
@@ -67,19 +71,19 @@ button {
     flex-direction: row;
     gap: 6%;
     font-family: inherit;
-
 }
 .text-description {
-
-    width: 60%
-
+    width: 65%;
+}
+hr {
+    border: none;
+    border-top: 1px solid var(--line);
 }
 
 /*Box list */
 .box-list {
 
     display:flex;
-    align-items:left;
     justify-content:flex-start;
     list-style: none;
     padding:1%;
