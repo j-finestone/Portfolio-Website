@@ -43,11 +43,11 @@ const myLittleCultsCard = new ProjectCards (
 cards.push(myLittleCultsCard)
 
 
-//My little cults card
+//Monster Msh
 const monsterMash = new ProjectCards (
     "code/images/monster-mash/monster-mash-thumbnail.png", 
     "Monster Mash", 
-     "Classrom management website for keeping track of student points, with sensory feedback to encourage good behavior",
+     "Classroom management website for keeping track of student points, with sensory feedback to encourage good behavior",
     "monster-mash")
 
 

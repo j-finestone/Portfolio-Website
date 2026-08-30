@@ -4,7 +4,7 @@ const descriptions = {
 
     balloonScape: `
         <h4>Overview</h4>
-        <p>Balloon-Scape is a 2D, open world adventure game. Find the four hot-airballoons
+        <p>Balloon-Scape is a 2D, open world adventure game. Find the four hot-air balloons
         in a land packed with quests, unique enemies, and diverse biomes.\n
         I created a Balloon-Scape at fifteen to learn to code, 
         and build something real to show to family and friends.</p>
@@ -19,7 +19,7 @@ const descriptions = {
         <p>After deciding to study Mandarin Chinese, I noticed that there weren’t any Anki decks or data sets that contained everything I wanted out of vocabulary flashcards. Namely: a deck ordered based strictly on a frequency list rather than the HSK, example sentences according to Krashen’s i+1 principle, notes flagging the nuances of the harder-to-translate words, pronunciation guides, and a breakdown of the characters making up a word. Because of this, I decided to create my own deck.</p>
 
         <h4>What I built</h4>
-        <p>This project takes in a pregenerated frequency list, and uses the Chat GPT API to generate translations, example sentences for each word. Additionally, it adds pinyin (pronunciation guides) to the card using pypinyin, and a breakdown of the components of the Chinese characters using the Make Me a Hanzi Dataset. Cards were generated asynchronously in batches to speed up generation. Attatched to the final commit is a csv and apkg file of 4,000+ cards pregenerated.</p>
+        <p>This project takes in a pregenerated frequency list, and uses the Chat GPT API to generate translations, example sentences for each word. Additionally, it adds pinyin (pronunciation guides) to the card using pypinyin, and a breakdown of the components of the Chinese characters using the Make Me a Hanzi Dataset. Cards were generated asynchronously in batches to speed up generation. Attached to the final commit is a csv and apkg file of 4,000+ cards pregenerated.</p>
 
         <h4>Lessons</h4>
 
@@ -55,7 +55,7 @@ const descriptions = {
 
         <h4>Lessons</h4>
         <p>Developing Monster Mash gave me experience in web development, working with cloud storage, libraries, and hosting API’s.</p>
-        <h4>Tech Stach</h4>
+        <h4>Tech Stack</h4>
         <p>HTML, CSS, JaveScript</p>`
 
     
@@ -162,7 +162,7 @@ function getDataFromId(id) {
     const match = Object.values(projectData).find(item =>item && item.id===id)
     return match
 
-    //if it doesnt find anything
+    //if it doesn't find anything
     console.warn("Page data not found for id: "+id)
     return null
 
